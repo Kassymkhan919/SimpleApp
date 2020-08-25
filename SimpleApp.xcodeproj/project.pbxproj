@@ -26,6 +26,7 @@
 		D7DA4E6424F0EEA900364BE8 /* SimpleAppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6324F0EEA900364BE8 /* SimpleAppTabBarController.swift */; };
 		D7DA4E6724F1030700364BE8 /* HistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6624F1030700364BE8 /* HistoryListViewController.swift */; };
 		D7DA4E6924F10E7400364BE8 /* HistoryCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6824F10E7400364BE8 /* HistoryCellCollectionViewCell.swift */; };
+		D7DA4E6B24F44B9700364BE8 /* CompanyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6A24F44B9700364BE8 /* CompanyInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D7DA4E6324F0EEA900364BE8 /* SimpleAppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppTabBarController.swift; sourceTree = "<group>"; };
 		D7DA4E6624F1030700364BE8 /* HistoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewController.swift; sourceTree = "<group>"; };
 		D7DA4E6824F10E7400364BE8 /* HistoryCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7DA4E6A24F44B9700364BE8 /* CompanyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfo.swift; sourceTree = "<group>"; };
 		F4E3F7E6F74D16E46582CAF8 /* Pods-SimpleApp-SimpleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleApp-SimpleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleApp-SimpleAppUITests/Pods-SimpleApp-SimpleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6FA7D4D7231E2869DCBD828 /* Pods_SimpleApp_SimpleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleApp_SimpleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 				D7B0A74524EE238E002739B4 /* Info.plist */,
 				D7DA4E5E24EF897E00364BE8 /* HomeViewController.swift */,
 				D7DA4E6024F0A2D800364BE8 /* CollectionViewCell.swift */,
+				D7DA4E6A24F44B9700364BE8 /* CompanyInfo.swift */,
 			);
 			path = SimpleApp;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DA4E6124F0A2D800364BE8 /* CollectionViewCell.swift in Sources */,
+				D7DA4E6B24F44B9700364BE8 /* CompanyInfo.swift in Sources */,
 				D7B0A73C24EE238C002739B4 /* ViewController.swift in Sources */,
 				D7DA4E6724F1030700364BE8 /* HistoryListViewController.swift in Sources */,
 				D7B0A73824EE238C002739B4 /* AppDelegate.swift in Sources */,

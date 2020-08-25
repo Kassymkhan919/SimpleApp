@@ -16,10 +16,12 @@ target 'SimpleApp' do
     # Pods for testing
   end
 
-# add the Firebase pod for Google Analytics
-pod 'Firebase/Analytics'
-pod 'Firebase/Database'
-# add pods for any other desired Firebase products
-# https://firebase.google.com/docs/ios/setup#available-pods
-
+  # add the Firebase pod for Google Analytics
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
+  # add pods for any other desired Firebase products
+  # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 end
