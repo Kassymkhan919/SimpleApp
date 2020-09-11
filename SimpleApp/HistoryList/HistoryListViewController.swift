@@ -6,7 +6,15 @@
 //  Copyright © 2020 dev. All rights reserved.
 //
 
+import FirebaseFirestoreSwift
+import Firebase
+import CodableFirebase
 import UIKit
+
+extension DocumentReference: DocumentReferenceType {}
+extension GeoPoint: GeoPointType {}
+extension FieldValue: FieldValueType {}
+extension Timestamp: TimestampType {}
 
 class HistoryListViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -15,28 +23,53 @@ class HistoryListViewController: UIViewController, UICollectionViewDataSource, U
     let priceBought = ["199", "150"]
     let stockIndex = ["Stock", "Index"]
     
+    let db = Firestore.firestore()
+
+    
+    @IBOutlet var collectionView: UICollectionView!
+    
+    private var company: [HistoryCompany] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        title = "History"
+        
+        setupDatabaseListener()
+        
+    }
+    
+    func setupDatabaseListener() {
+        Firestore.firestore().collection("Portfolio").getDocuments() { (query, error) in
+            if let documents = query?.documents {
+                self.company = documents.map { document in
+                return try! FirestoreDecoder().decode(HistoryCompany.self, from: document.data())
+              }
+            } else {
+                print("Document does not exist")
+            }
+        }
+        collectionView.reloadData()
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return companyName.count
+        return company.count
+//        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "historyCell", for: indexPath) as! HistoryCellCollectionViewCell
         
-        cell.companyName.text = companyName[indexPath.row]
-        cell.dateBought.text = dateBought[indexPath.row]
-        cell.priceBought.text = priceBought[indexPath.row]
-        cell.stockIndexIndicator.text = stockIndex[indexPath.row]
+        let historyCompany = company[indexPath.row]
+        cell.configure(with: historyCompany)
         
         return cell
     }
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        title = "History"
-    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10

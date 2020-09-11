@@ -10,6 +10,7 @@
 		01AFC819F9AC6E055D3D99F8 /* Pods_SimpleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9478C2A1BF3EEA4EAE24BC /* Pods_SimpleAppTests.framework */; };
 		37DB09BC257B9C4960F89C97 /* Pods_SimpleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E26E87D4BB509DF0325A00 /* Pods_SimpleApp.framework */; };
 		BBCA9349505F6E2BA2005B68 /* Pods_SimpleApp_SimpleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FA7D4D7231E2869DCBD828 /* Pods_SimpleApp_SimpleAppUITests.framework */; };
+		D79589332502118C00CEB05C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79589322502118C00CEB05C /* AuthViewController.swift */; };
 		D7B0A73824EE238C002739B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0A73724EE238C002739B4 /* AppDelegate.swift */; };
 		D7B0A73A24EE238C002739B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0A73924EE238C002739B4 /* SceneDelegate.swift */; };
 		D7B0A73C24EE238C002739B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0A73B24EE238C002739B4 /* ViewController.swift */; };
@@ -18,15 +19,14 @@
 		D7B0A74424EE238E002739B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B0A74224EE238E002739B4 /* LaunchScreen.storyboard */; };
 		D7B0A74F24EE238F002739B4 /* SimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0A74E24EE238F002739B4 /* SimpleAppTests.swift */; };
 		D7B0A75A24EE238F002739B4 /* SimpleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0A75924EE238F002739B4 /* SimpleAppUITests.swift */; };
-		D7DA4E5B24EF855E00364BE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7DA4E5A24EF855E00364BE8 /* GoogleService-Info.plist */; };
-		D7DA4E5C24EF855E00364BE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7DA4E5A24EF855E00364BE8 /* GoogleService-Info.plist */; };
-		D7DA4E5D24EF855E00364BE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7DA4E5A24EF855E00364BE8 /* GoogleService-Info.plist */; };
 		D7DA4E5F24EF897E00364BE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E5E24EF897E00364BE8 /* HomeViewController.swift */; };
 		D7DA4E6124F0A2D800364BE8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6024F0A2D800364BE8 /* CollectionViewCell.swift */; };
 		D7DA4E6424F0EEA900364BE8 /* SimpleAppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6324F0EEA900364BE8 /* SimpleAppTabBarController.swift */; };
 		D7DA4E6724F1030700364BE8 /* HistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6624F1030700364BE8 /* HistoryListViewController.swift */; };
 		D7DA4E6924F10E7400364BE8 /* HistoryCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6824F10E7400364BE8 /* HistoryCellCollectionViewCell.swift */; };
 		D7DA4E6B24F44B9700364BE8 /* CompanyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA4E6A24F44B9700364BE8 /* CompanyInfo.swift */; };
+		D7E4242824F6377900A1EF1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7E4242724F6377900A1EF1E /* GoogleService-Info.plist */; };
+		D7E4242A24F6E6A300A1EF1E /* HistoryCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4242924F6E6A300A1EF1E /* HistoryCompany.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,8 @@
 		580A563F734F0A01454B951C /* Pods-SimpleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAppTests/Pods-SimpleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B36B20BA0BF3AE3746BF2AD8 /* Pods-SimpleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAppTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleAppTests/Pods-SimpleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA9478C2A1BF3EEA4EAE24BC /* Pods_SimpleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79589322502118C00CEB05C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		D79589342502151000CEB05C /* SimpleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleApp.entitlements; sourceTree = "<group>"; };
 		D7B0A73424EE238C002739B4 /* SimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B0A73724EE238C002739B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7B0A73924EE238C002739B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,13 +70,14 @@
 		D7B0A75524EE238F002739B4 /* SimpleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B0A75924EE238F002739B4 /* SimpleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppUITests.swift; sourceTree = "<group>"; };
 		D7B0A75B24EE238F002739B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7DA4E5A24EF855E00364BE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7DA4E5E24EF897E00364BE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D7DA4E6024F0A2D800364BE8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D7DA4E6324F0EEA900364BE8 /* SimpleAppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppTabBarController.swift; sourceTree = "<group>"; };
 		D7DA4E6624F1030700364BE8 /* HistoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewController.swift; sourceTree = "<group>"; };
 		D7DA4E6824F10E7400364BE8 /* HistoryCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		D7DA4E6A24F44B9700364BE8 /* CompanyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfo.swift; sourceTree = "<group>"; };
+		D7E4242724F6377900A1EF1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "SimpleApp/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D7E4242924F6E6A300A1EF1E /* HistoryCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCompany.swift; sourceTree = "<group>"; };
 		F4E3F7E6F74D16E46582CAF8 /* Pods-SimpleApp-SimpleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleApp-SimpleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleApp-SimpleAppUITests/Pods-SimpleApp-SimpleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6FA7D4D7231E2869DCBD828 /* Pods_SimpleApp_SimpleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleApp_SimpleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,19 +145,20 @@
 		D7B0A73624EE238C002739B4 /* SimpleApp */ = {
 			isa = PBXGroup;
 			children = (
+				D79589342502151000CEB05C /* SimpleApp.entitlements */,
+				D7E4242424F5EBCA00A1EF1E /* Model */,
+				D7E4242324F5EB8E00A1EF1E /* HomeScreen */,
 				D7DA4E6524F102D400364BE8 /* HistoryList */,
 				D7DA4E6224F0EE6300364BE8 /* TabBar */,
-				D7DA4E5A24EF855E00364BE8 /* GoogleService-Info.plist */,
+				D7B0A73D24EE238C002739B4 /* Main.storyboard */,
+				D7E4242724F6377900A1EF1E /* GoogleService-Info.plist */,
 				D7B0A73724EE238C002739B4 /* AppDelegate.swift */,
 				D7B0A73924EE238C002739B4 /* SceneDelegate.swift */,
-				D7B0A73B24EE238C002739B4 /* ViewController.swift */,
-				D7B0A73D24EE238C002739B4 /* Main.storyboard */,
 				D7B0A74024EE238E002739B4 /* Assets.xcassets */,
 				D7B0A74224EE238E002739B4 /* LaunchScreen.storyboard */,
 				D7B0A74524EE238E002739B4 /* Info.plist */,
 				D7DA4E5E24EF897E00364BE8 /* HomeViewController.swift */,
-				D7DA4E6024F0A2D800364BE8 /* CollectionViewCell.swift */,
-				D7DA4E6A24F44B9700364BE8 /* CompanyInfo.swift */,
+				D79589322502118C00CEB05C /* AuthViewController.swift */,
 			);
 			path = SimpleApp;
 			sourceTree = "<group>";
@@ -192,6 +196,24 @@
 				D7DA4E6824F10E7400364BE8 /* HistoryCellCollectionViewCell.swift */,
 			);
 			path = HistoryList;
+			sourceTree = "<group>";
+		};
+		D7E4242324F5EB8E00A1EF1E /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D7B0A73B24EE238C002739B4 /* ViewController.swift */,
+				D7DA4E6024F0A2D800364BE8 /* CollectionViewCell.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		D7E4242424F5EBCA00A1EF1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA4E6A24F44B9700364BE8 /* CompanyInfo.swift */,
+				D7E4242924F6E6A300A1EF1E /* HistoryCompany.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E14B67202BCD263D38418164 /* Pods */ = {
@@ -317,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B0A74424EE238E002739B4 /* LaunchScreen.storyboard in Resources */,
-				D7DA4E5B24EF855E00364BE8 /* GoogleService-Info.plist in Resources */,
+				D7E4242824F6377900A1EF1E /* GoogleService-Info.plist in Resources */,
 				D7B0A74124EE238E002739B4 /* Assets.xcassets in Resources */,
 				D7B0A73F24EE238C002739B4 /* Main.storyboard in Resources */,
 			);
@@ -327,7 +349,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DA4E5C24EF855E00364BE8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DA4E5D24EF855E00364BE8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +469,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79589332502118C00CEB05C /* AuthViewController.swift in Sources */,
+				D7E4242A24F6E6A300A1EF1E /* HistoryCompany.swift in Sources */,
 				D7DA4E6124F0A2D800364BE8 /* CollectionViewCell.swift in Sources */,
 				D7DA4E6B24F44B9700364BE8 /* CompanyInfo.swift in Sources */,
 				D7B0A73C24EE238C002739B4 /* ViewController.swift in Sources */,
@@ -631,7 +653,9 @@
 			baseConfigurationReference = 385B8487418B3E33AE5DE51E /* Pods-SimpleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleApp/SimpleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F3LBBGQH8J;
 				INFOPLIST_FILE = SimpleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -649,7 +673,9 @@
 			baseConfigurationReference = 142982CF1AB6F59A7D9B84B0 /* Pods-SimpleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleApp/SimpleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F3LBBGQH8J;
 				INFOPLIST_FILE = SimpleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
