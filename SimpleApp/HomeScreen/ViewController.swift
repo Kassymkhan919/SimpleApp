@@ -60,19 +60,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func setupDatabaseListener() {
-//        db.collection("companies").addSnapshotListener { (snapshot, error) in
-//                    if let error = error {
-//        //                self.showError(with: error.localizedDescription)
-//        //                showError(with: error.localizedDescription)
-//                    }
-//                    else if let snapshot = snapshot {
-//                        self.companies = snapshot.documents.compactMap({ (document) -> CompanyInfo? in
-//                            let companyinfo = try? document.data(as: CompanyInfo.self)
-//                            return companyinfo
-//                        })
-//                    }
-//                }
-//
+        db.collection("companies").addSnapshotListener { (snapshot, error) in
+                    if let error = error {
+        //                self.showError(with: error.localizedDescription)
+        //                showError(with: error.localizedDescription)
+                    }
+                    else if let snapshot = snapshot {
+                        self.companies = snapshot.documents.compactMap({ (document) -> CompanyInfo? in
+                            let companyinfo = try? document.data(as: CompanyInfo.self)
+                            return companyinfo
+                        })
+                    }
+                }
+
         
 
         
