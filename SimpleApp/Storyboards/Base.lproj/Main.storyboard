@@ -313,14 +313,27 @@
         <!--Portfolio Stats-->
         <scene sceneID="NfP-p9-dHq">
             <objects>
-                <viewController id="99c-VF-0im" sceneMemberID="viewController">
+                <viewController id="99c-VF-0im" customClass="PortfolioViewController" customModule="SimpleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BKm-Xr-MUn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqT-Si-6kx">
+                                <rect key="frame" x="166" y="119" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="40h-pB-Mbl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Portfolio Stats" id="oCL-4x-zSi"/>
+                    <connections>
+                        <outlet property="TotalAmount" destination="fqT-Si-6kx" id="Oem-N5-ccc"/>
+                        <outletCollection property="portfolioCollectionView" destination="BKm-Xr-MUn" collectionClass="NSMutableArray" id="FZA-zN-RKp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9O3-gb-nPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

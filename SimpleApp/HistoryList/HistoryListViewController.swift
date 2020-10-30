@@ -40,6 +40,7 @@ class HistoryListViewController: UIViewController, UICollectionViewDataSource, U
         title = "History"
         
         setupDatabaseListener()
+        print(company.count)
         
     }
     

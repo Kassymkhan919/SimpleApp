@@ -18,6 +18,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     let db = Firestore.firestore()
     
+    private let userDefaults = UserDefaults.standard
+    
     private var companies: [CompanyInfo] = [] {
         didSet {
             collectionView.reloadData()
@@ -30,10 +32,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let currentDate = Date()
-        var dateComponent = DateComponents()
-        dateComponent.day = 1
-        let futureDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
+//        let currentDate = Date()
+//        var dateComponent = DateComponents()
+//        dateComponent.day = 1
+//        let futureDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
         
 //        if date > 00:00
 //            show new content
@@ -41,10 +43,27 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         setupUI()
 //        setupDocIds()
-        setupDatabaseListener()
-        
+//        setupDatabaseListener()
+        performFetchIfNeeded()
         
 
+    }
+    
+    private func performFetchIfNeeded() {
+        let today = Date()
+        
+        if let lastFetchDate = userDefaults.object(forKey: "lastFetchDate") as? Date {
+            let areSameDay = Calendar.current.dateComponents([.day], from: lastFetchDate, to: today).day == 0
+            if !areSameDay {
+//                fetchDocuments()
+                setupDatabaseListener()
+                userDefaults.set(today, forKey: "lastFetchDate")
+            }
+        } else {
+//            fetchDocuments()
+            setupDatabaseListener()
+            userDefaults.set(today, forKey: "lastFetchDate")
+        }
     }
     
     func setupDocIds() {
